@@ -24,14 +24,14 @@ A complete guide to using the DAZ-CAD-2 browser-based parametric CAD editor.
 ./run serve
 ```
 
-The server starts at `http://127.0.0.1:8765`. Open this URL in your browser.
+The server starts at `http://127.0.0.1:8766`. Open this URL in your browser.
 
 ### URL-Based Model Selection
 
 You can navigate directly to a model using its name in the URL:
 
-- `http://127.0.0.1:8765/gridfinity-demo` - Opens the gridfinity demo model
-- `http://127.0.0.1:8765/open-box` - Opens the open box model
+- `http://127.0.0.1:8766/gridfinity-demo` - Opens the gridfinity demo model
+- `http://127.0.0.1:8766/open-box` - Opens the open box model
 
 ---
 

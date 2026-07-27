@@ -15,7 +15,7 @@ Browser-based CAD application using OpenCascade.js for 3D modeling. JavaScript C
 
 ## Testing
 - Run tests: `python -m pytest src/server_test.py -v`
-- Smoketest: `./smoketest` (connects to localhost:8765, waits for OC.js ready)
+- Smoketest: `./smoketest` (connects to localhost:8766, waits for OC.js ready)
 - Tests use Playwright and require a running server (pytest fixture handles this)
 - Tests use `page.evaluate()` to run JavaScript in browser context
 - Pattern tests verify cutting by comparing mesh vertex counts before/after

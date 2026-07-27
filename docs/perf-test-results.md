@@ -7,7 +7,7 @@ This document tracks performance test results for the CAD editor, focusing on pa
 ## How to Run Tests
 
 1. Start the server: `./run serve`
-2. Navigate to: `http://localhost:8765/perf-test`
+2. Navigate to: `http://localhost:8766/perf-test`
 3. Click "Run All Tests" or individual test categories
 4. Copy the JSON results from the bottom of the page
 

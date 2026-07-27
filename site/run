@@ -57,7 +57,7 @@ def cmd_screenshots(args: argparse.Namespace) -> int:
     web_path = SITE_ROOT / "local" / "web"
     screenshots_dir = web_path / "screenshots"
 
-    server_url = "http://127.0.0.1:8765"
+    server_url = "http://127.0.0.1:8766"
 
     # Check if server is running
     import requests
@@ -159,7 +159,7 @@ def cmd_publish(args: argparse.Namespace) -> int:
     print("\n[2/4] Screenshots...")
     import requests
     try:
-        requests.get("http://127.0.0.1:8765/health", timeout=2)
+        requests.get("http://127.0.0.1:8766/health", timeout=2)
         cmd_screenshots(argparse.Namespace())
     except (requests.ConnectionError, requests.Timeout):
         print("  Skipping screenshots (server not running)")

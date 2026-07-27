@@ -6,7 +6,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent
 TEST_OUT = PROJECT_ROOT / "output" / "testing"
-PORT = 8765
+PORT = 8766
 
 
 # ##################################################################

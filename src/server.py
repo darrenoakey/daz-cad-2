@@ -15,7 +15,7 @@ from pathlib import Path
 from daz_agent_sdk import agent, Tier
 from daz_agent_sdk.conversation import Conversation
 
-PORT = 8765
+PORT = 8766
 BASE_DIR = Path(__file__).parent.parent
 WATCH_DIR = BASE_DIR / "static"
 MODELS_DIR = BASE_DIR / "local" / "models"

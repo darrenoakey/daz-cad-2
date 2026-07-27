@@ -25,7 +25,7 @@ def capture_screenshots(server_url: str, output_dir: Path) -> None:
     Requires a running daz-cad server and Playwright installed.
 
     Args:
-        server_url: URL of the running server (e.g., http://127.0.0.1:8765).
+        server_url: URL of the running server (e.g., http://127.0.0.1:8766).
         output_dir: Directory to save screenshots.
     """
     output_dir.mkdir(parents=True, exist_ok=True)

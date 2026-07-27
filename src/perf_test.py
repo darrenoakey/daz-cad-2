@@ -17,20 +17,20 @@ from playwright.sync_api import sync_playwright
 def run_perf_tests():
     # check if server already running
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_running = sock.connect_ex(('127.0.0.1', 8765)) == 0
+    server_running = sock.connect_ex(('127.0.0.1', 8766)) == 0
     sock.close()
 
     server = None
     if not server_running:
         print("Starting server...")
         server = subprocess.Popen(
-            [sys.executable, "-m", "uvicorn", "src.server:app", "--host", "127.0.0.1", "--port", "8765"],
+            [sys.executable, "-m", "uvicorn", "src.server:app", "--host", "127.0.0.1", "--port", "8766"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
         time.sleep(5)  # wait for server to start
     else:
-        print("Server already running on port 8765")
+        print("Server already running on port 8766")
 
     try:
         with sync_playwright() as p:
@@ -43,7 +43,7 @@ def run_perf_tests():
 
             # navigate to perf test page
             print("Loading perf test page...")
-            page.goto("http://localhost:8765/perf-test", timeout=120000)
+            page.goto("http://localhost:8766/perf-test", timeout=120000)
 
             # wait for OpenCascade to load - check status text
             print("Waiting for OpenCascade to initialize...")

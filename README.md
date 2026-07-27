@@ -41,7 +41,7 @@ This installs Python dependencies, development tools, and the Playwright browser
 ./run serve
 ```
 
-The server starts at `http://127.0.0.1:8765`. Open this URL in your browser to access the CAD editor.
+The server starts at `http://127.0.0.1:8766`. Open this URL in your browser to access the CAD editor.
 
 ### Running Tests
 
@@ -78,7 +78,7 @@ This requires Docker to be installed and running.
 ### Creating a Simple Model
 
 1. Start the server with `./run serve`
-2. Open `http://127.0.0.1:8765` in your browser
+2. Open `http://127.0.0.1:8766` in your browser
 3. Use the editor interface to create shapes
 4. Adjust parameters using the properties panel sliders
 5. Export to 3MF for printing
